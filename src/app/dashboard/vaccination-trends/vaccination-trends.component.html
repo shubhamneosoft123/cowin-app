@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class=" col-lg-12">
+            <div class="card ">
+                     <h4>Vaccination trends</h4>
+                    <div class="card-body">
+                        <div class="pb-4">
+                            <button class="btn btn-success mx-2" (click)="toggleChart('dose')">By Dose</button>
+                            <button class="btn btn-success mx-2" (click)="toggleChart('age')">By Age</button>
+                        </div>
+                        <div >
+                            <canvas  width="800px" height= "213px" id="barChart"></canvas>
+                        </div>
+                   </div>
+            </div>
+        </div>
+    </div>
+</div>
+

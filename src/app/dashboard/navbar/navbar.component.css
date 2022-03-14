@@ -1,0 +1,16 @@
+
+
+.navbar{
+    background-color: #017e7e!important;
+    /* #045d5d */
+    /* #009d9d */
+
+    /* #017e7e!important */ 
+}
+.navbar a{
+    color: aliceblue;
+}
+.navbar-toggler{
+    background-color: palevioletred;
+    color: black;
+}

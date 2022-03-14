@@ -1,0 +1,30 @@
+<section class="container-fluid">
+    <div class="row mt-4">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+          <div  class="card">
+            <h4 class="pt-4 mx-4">vaccination by gender</h4>
+              <div id="divchart" >
+                <canvas id="pieChart">{{genderChart}}</canvas>
+              </div>
+          </div>
+      </div>
+      <div class=" col-sm-12 col-md-6 col-lg-4">
+        <div class="card">
+          <h4 class="pt-4 mx-4">vaccination by Type</h4>
+            <div id="divchart" >
+              <canvas id="donChart">{{typeChart}}</canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="card">
+        <h4 class="pt-4 mx-4">vaccination by Age</h4>
+          <div class="mt-5">
+            <canvas id="stackChart"  width="90%" height="53%">{{ageChart}}</canvas>
+          </div>
+      </div>
+  </div>
+    </div>
+  </section>
+  
+  

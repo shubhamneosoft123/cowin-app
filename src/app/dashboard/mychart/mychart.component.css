@@ -1,0 +1,12 @@
+#divchart{
+    width: 300px;
+    height: 300px;
+    margin-left: 40px;
+    
+}
+.card{
+    position: relative;
+    min-height: 350px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}

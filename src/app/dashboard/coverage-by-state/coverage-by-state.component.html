@@ -1,0 +1,71 @@
+<div class="container-fluid py-4">
+    <div class="row ">
+        <div class="col-lg-12">
+            <div class="card">
+                <div  class="p-3 ">
+                    <h5 class="text-muted">Vaccination Coverage By State/UT</h5>
+                </div>
+                <div class="card-body"> 
+                   
+                <div class="row">
+                    <div class="col-lg-5">
+                    <h1>shubham</h1>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="block1">
+                            <ul *ngFor="let d of Vacc_State_Data"> 
+                                <li  style="display: flex;align-items: center;border-bottom: 2px dashed #000;">
+                                    <!--  -->
+                                    <div class="donut" style="--first: .80; --second: .33;">
+                                        <div class="donut__slice donut__slice__first"></div>
+                                        <div class="donut__slice donut__slice__second"></div>
+                                       
+                        
+                                      </div>
+                                    <!--  -->
+                                    <ul>
+                                        <li><span style="color: #0b0f22;
+                                            font-size: 16px;margin-left: 8px;
+                                            font-weight: 500;">{{d.title}}</span></li>
+                                        <li >
+                                           <table   class="table table-borderless table-responsive">
+                                               <thead>
+                                                   <tr>
+                                                       
+                                                       <th class="text-muted">Today</th>
+                                                       <th class="text-muted">Total</th>
+                                                       <th class="text-muted" >Dose 1</th>
+                                                       <th class="text-muted">Dose 2</th>
+                                                       <th class="text-muted">Precaution Dose</th>
+                                                   </tr>
+                                               </thead>
+                                               <tbody>
+                                                   <tr  >
+                                                    
+                                                       <td>{{d.today}}</td>
+                                                       <td>{{d.total}}</td>
+                                                       <td style="color: #ff9800;">{{d.partial_vaccinated}}</td>
+                                                       <td style="color: #21cc98;">{{d.totally_vaccinated}}</td>
+                                                       <td style="color: #12ad06;">{{d.precaution_dose}}</td>
+                                                   </tr>
+                                               </tbody>
+                                           </table>
+                                        </li>
+                                    </ul>
+                                </li>
+                           </ul> 
+                        </div>
+                         
+                    </div>
+                </div>    
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

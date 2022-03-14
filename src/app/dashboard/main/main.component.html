@@ -1,0 +1,168 @@
+
+<!-- <section class="main-content1">
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 padlr15px mb-3">
+                <div class="card1">
+                    <div class="card-body py-5">
+                      <h3 class="card-title text-center ">Registration Today</h3>
+                      <h3 class="card-text text-center">0000000</h3>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9 padlr6px mb-3">
+                
+        <div class="row">
+            
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 padlr15px mb-3">
+                <div class="card2">
+                    <div class="card-body">
+                      <p class="card-title text-center">VACCINATIONS TODAY</p>
+                      <h4 class="card-text text-center">274000</h4>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 padlr15px mb-3">
+                <div class="card3">
+                    <div class="card-body">
+                      <p class="card-title text-center">VACCINATIONS TODAY</p>
+                      <h4 class="card-text text-center">274000</h4>  </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 padlr15px mb-3">
+                <div class="card4">
+                    <div class="card-body">
+                      <p class="card-title text-center">VACCINATIONS TODAY</p>
+                      <h4 class="card-text text-center">274000</h4></div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 padlr15px mb-3">
+                <div class="card5">
+                    <div class="card-body">
+                      <p class="card-title text-center">VACCINATIONS TODAY</p>
+                      <h4 class="card-text text-center">274000</h4> </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 padlr15px mb-3">
+                <div class="card6">
+                    <div class="card-body">
+                      <p class="card-title text-center">VACCINATIONS TODAY</p>
+                      <h4 class="card-text text-center">274000</h4> </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 padlr15px mb-3">
+                <div class="card7">
+                    <div class="card-body">
+                      <p class="card-title text-center">VACCINATIONS TODAY</p>
+                      <h4 class="card-text text-center">274000</h4>
+                    </div>
+                  </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<div class="py-3 mx-3">
+
+  <select (change)="myfunc($event)">
+    <option selected>Select State</option>
+    <option [value]="d.state_id" *ngFor="let d of States">{{d.state_name}}</option>
+  </select>
+
+  &nbsp;
+  &nbsp;
+  
+  <select>
+    <option selected>Select District</option>
+    <option [value]="d.district_id" *ngFor="let d of city">{{d.district_name}}</option>
+  </select>
+
+  <p>{{selectedValue}}</p>
+ 
+  
+
+  
+</div>
+
+<section class="main-content2">
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
+              
+              <!-- <span id="sp1"> <img id="img1" src="../../../assets/total-vaccination-doses-icon.svg"></span> -->
+              <div class="card">
+                <div class="card-body mt-5 px-4">
+                  <h6 class="card-title text-center">Total Vaccination Doses</h6>
+                  <h2 id="sagar" class="card-text text-center">{{V_Total | number}}</h2>
+                       <div class="row">
+                        <div class="col-sm-4 col pl-0 text-left">
+                            <span class="text-muted">Dose 1</span>
+                            <h6>{{V_Dose_1 |number}}</h6>
+                        </div>
+                        <div class="col-sm-4 col pl-0 text-left">
+                            <span class="text-muted">Dose 2</span>
+                            <h6>{{V_Dose_2  |number}}</h6>
+                        </div>
+                        <div class="col-sm-4 col pl-0 text-left">
+                            <span class="text-muted">Precution Dose</span>
+                            <h6>{{V_Precaution_Dose |number}}</h6>
+                        </div>
+                       </div> 
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
+              <!-- <span id="sp2"> <img id="img2" src="../../../assets/site.svg"></span> -->
+                <div class="card">
+                  <div class="card-body mt-5 px-4">
+                    <h6 class="card-title text-center">Sites Conducting Vaccination </h6>
+                    <h2 id="sagar" class="card-text text-center">{{SiteTotal |number}}</h2>
+                         <div class="row  justify-content-between">
+                          <div class="col-sm-4 col pl-0  ">
+                              <span class="text-muted">Goverment</span>
+                              <h6>{{SiteGvt |number}}</h6>
+                          </div>
+                          
+                          <div class="col-sm-4 col pl-0   ">
+                              <span class="text-muted">Private</span>
+                              <h6>{{SitePvt|number}}</h6>
+                          </div>
+                         
+                         </div> 
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
+                <!-- <span id="sp3"> <img id="img3" src="../../../assets/total-registrations-icon.svg"></span> -->
+                <div class="card">
+                  <div class="card-body mt-5 px-4">
+                    <h6 class="card-title text-center">Total Registrations </h6>
+                    <h2 id="sagar" class="card-text text-center">{{RegTotal|number}}</h2>
+                         <div class="row">
+                          <div class="col-sm-4 col pl-0 text-left">
+                              <span class="text-muted">Age 15-17</span>
+                              <h6>{{Age_15_17|number}}</h6>
+                          </div>
+                          <div class="col-sm-4 col pl-0 text-left">
+                              <span class="text-muted">Age 18-44</span>
+                              <h6>{{Age_18_45|number}}</h6>
+                          </div>
+                          <div class="col-sm-4 col pl-0 text-left">
+                              <span class="text-muted">Age 45+</span>
+                              <h6>{{Age_45_above|number}}</h6>
+                          </div>
+                         </div> 
+                  </div>
+                </div>
+              </div>
+              
+            
+          </div> <!-- ./row-->
+    </div> <!-- ./container-->
+</section>
+
